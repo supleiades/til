@@ -1,2 +1,6 @@
 SSRF(Server Side Request Forgery)とは
 「外部から直接アクセスできないエンドポイント」に対して、公開サーバーなどを踏み台としてアクセスする攻撃方法
+
+IMDS(Instance Metadata Service (v2))とは
+クラウドサービスのインスタンス・メタデータを取得するAPIのエンドポイントです。
+有名なものがAmazon EC2の169.254.169.254(IMDS)
