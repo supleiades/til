@@ -21,6 +21,8 @@ https://ja.wikibooks.org/wiki/JavaScript/RegExp#%E3%83%96%E3%83%A9%E3%82%B1%E3%8
 
 
 変数に""で格納すると\は消える
+正規表現で一般的に使う「\d」「\w」などの「\（バックスラッシュ）」はエスケープ処理と判断されてしまいます。
+そこで、対応策として「\\d」や「\\w」のように２重で記述
 ```
 var str = "\s\S"
 console.log(str) // sS
