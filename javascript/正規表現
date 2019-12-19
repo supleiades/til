@@ -18,3 +18,10 @@ replace	文字列中で一致するものを検索し、マッチした部分文
 split	正規表現または固定文字列を用いて文字列を分割し、部分文字列の配列に入れる String のメソッドです。
 
 https://ja.wikibooks.org/wiki/JavaScript/RegExp#%E3%83%96%E3%83%A9%E3%82%B1%E3%83%83%E3%83%88%E3%80%8E[]%E3%80%8F
+
+
+変数に""で格納すると\は消える
+```
+var str = "\s\S"
+console.log(str) // sS
+```
