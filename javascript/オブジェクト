@@ -6,4 +6,15 @@ myCar.model = 'Mustang';
 myCar.year = 1969;
 
 myCar.color; // undefined
+
+// 以下のやり方でもオブジェクト作成可能
+// var myCar = {make: "Ford", model: "Mustang", year: 1969};
+```
+
+
+
+オブジェクトに含まれたkeyの一覧を取得する
+```
+console.log(Object.keys(myCar));
+// ["make", "model", "year"]
 ```
