@@ -18,3 +18,14 @@ myCar.color; // undefined
 console.log(Object.keys(myCar));
 // ["make", "model", "year"]
 ```
+
+オブジェクトの番号（先頭を0として)で要素を取り出そうとするとundefined
+keyで取り出すとvalueが返ってくる
+```
+// var myCar = {make: "Ford", model: "Mustang", year: 1969}
+
+console.log(myCar[1])
+// undefined
+console.log(myCar["make"])
+// Ford
+```
