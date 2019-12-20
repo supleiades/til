@@ -1,0 +1,9 @@
+オブジェクトに割り当てられていないプロパティは undefined です (null ではありません)。
+```
+var myCar = new Object();
+myCar.make = 'Ford';
+myCar.model = 'Mustang';
+myCar.year = 1969;
+
+myCar.color; // undefined
+```
