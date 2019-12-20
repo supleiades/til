@@ -1,0 +1,14 @@
+オプションフラグを付与せずmatchを行った場合
+
+```
+var str = "aaaaaaaaaaaaaaa111-1111";
+var strReg = new RegExp("111-111.");
+var result = str.match(strReg); //?
+result.index // 
+
+// 以下がresultの中身
+// [ '111-1111', 
+// index: 15, 
+// input: 'aaaaaaaaaaaaaaa111-1111', 
+// groups: undefined ] 
+```
