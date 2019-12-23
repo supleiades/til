@@ -1,0 +1,4 @@
+str：文字列
+int：数値
+float：小数
+datetime.datetime：datetimeモジュールで生成した値の型、用途により文字列や数値に変換する必要あり
