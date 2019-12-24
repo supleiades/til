@@ -43,3 +43,6 @@ json
 『\r(キャリッジリターン)』
 『\t(バックスペース)』
 ```
+
+# 参考
+https://sshi.hatenadiary.org/entry/20060904/p1
