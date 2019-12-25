@@ -14,3 +14,12 @@ var arr =  "配列の中身は" + arr + "です"
 // 変数の中身はundefinedです
 
 ```
+
+# !とundefinedでtrue
+
+注意：falseや0もundefined扱いになってしまう
+```
+if (!a) {
+  alert("aはfalseか0かundefinedかnull");
+}
+```
