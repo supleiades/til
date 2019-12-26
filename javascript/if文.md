@@ -17,3 +17,11 @@ if(!arr){ // true
     false
 }
 ```
+
+## break
+
+ break文は繰り返しを中断してループから抜け出す
+ 
+## continue
+
+continue文は繰り返しを中断してループの先頭に戻る
