@@ -1,7 +1,0 @@
-#文字列から日付に変換する
-
-```
-var birthday = new Date(1995, 11, 17); // Sun Dec 17 1995 00:00:00 GMT+0900 (日本標準時)
-var birthday = new Date("2019/09/30 12:00"); // Mon Sep 30 2019 12:00:00 GMT+0900 (日本標準時) 
-typeof(birthday) // object
-```
