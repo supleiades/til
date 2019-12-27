@@ -17,10 +17,13 @@ try {
 # throwで強制的にエラー
 
 # エラーの種類
-Error	一般的なエラー全般で利用
-ReferenceError	宣言されていない変数によるエラー
-SyntaxError	プログラムの文法エラー
-TypeError	想定された値と異なるデータ型によるエラー
-RangeError	想定された許容範囲を超えた値によるエラー
-URIError	不正なURIが指定されたことによるエラー
-EvalError	不正なeval関数が実行されたエラー
+
+|エラーの種類|説明|
+|:-|:|
+|Error|一般的なエラー全般で利用|
+|ReferenceError|宣言されていない変数によるエラー|
+|SyntaxError|プログラムの文法エラー|
+|TypeError|想定された値と異なるデータ型によるエラー|
+|RangeError|想定された許容範囲を超えた値によるエラー|
+|URIError|不正なURIが指定されたことによるエラー|
+|EvalError|不正なeval関数が実行されたエラー|
