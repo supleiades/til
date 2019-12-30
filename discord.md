@@ -30,3 +30,11 @@ bot = commands.Bot("/")
 async def neko(ctx):
     await ctx.send(f'{ctx.author.mention} にゃーん')
 ```
+
+
+
+# キーワード
+
+・デコレータ
+
+・コルーチン関数
