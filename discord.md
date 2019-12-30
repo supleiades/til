@@ -20,3 +20,13 @@ message.channel.send()
 async def on_message(message):
     if message.content == '{指定文字列}';
 ```
+
+## ボットのコマンド
+```
+# プレフィックスは/
+# コマンドはneko
+bot = commands.Bot("/")
+@bot.command()
+async def neko(ctx):
+    await ctx.send(f'{ctx.author.mention} にゃーん')
+```
