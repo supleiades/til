@@ -1,0 +1,5 @@
+# DISTINCT
+```
+SELECT FISTINCT({除外するカラム}) FROM {テーブル};
+```
+
