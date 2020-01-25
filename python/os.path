@@ -1,0 +1,24 @@
+# import os
+
+# 実行したスクリプトのディレクトリ
+```
+os.path.dirname(os.path.abspath(__file__))
+```
+
+# 実行例
+```
+print('basename:    ', os.path.basename(__file__))
+print('dirname:     ', os.path.dirname(__file__))
+
+# basename:     file_path.py
+# dirname:      data/src
+
+print('getcwd:      ', os.getcwd())
+print('__file__:    ', __file__)
+
+---> python3 data/src/file_path.py
+# getcwd:       /Users/mbp/Documents/my-project/python-snippets/notebook
+# __file__:     data/src/file_path.py
+# pwd
+# /Users/mbp/Documents/my-project/python-snippets/notebook
+```
