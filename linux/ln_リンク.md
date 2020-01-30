@@ -10,7 +10,9 @@ ln [オプション] {リンク元} {リンク先(別名)}
 
 ### エラー
 
-シンボリックを別の階層（ディレクトリ）にファイル名だけ指定して作成した場合に発生
+pythonファイルをリンクして、python3で実行した際に発生
+
+シンボリックを別の階層（ディレクトリ）にファイル名だけ指定して作成したのが原因
 ```
 python3: can't open file '{file name}': [Errno 40] Too many levels of symbolic links
 
