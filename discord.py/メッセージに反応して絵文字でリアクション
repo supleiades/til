@@ -1,0 +1,17 @@
+以下のコードで文字を打ったメッセージに指定した絵文字でリアクションを行う
+条件をしていしていないので、全てのメッセージに反応をします
+
+```
+import discord
+
+TOKEN = "{token_id}"
+client = discord.Client()
+
+@client.event
+async def on_message(message):
+    await message.add_reaction("❤")
+    await message.add_reaction("🔃")
+    await message.add_reaction("🚩")
+
+client.run(TOKEN)
+```
