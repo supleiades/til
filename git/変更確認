@@ -1,0 +1,27 @@
+変更を1行で表示
+
+```
+$ git log --oneline
+
+# 標準出力
+b77d92c (HEAD -> master, origin/master, origin/HEAD) modify test.py
+4e5fcfd modify observer.sh 2
+aa6f600 modify observer.sh
+314cc13 Modigying valiables
+99b819f add os.path.dirname(os.path.abspath(__file__))
+07766dd Delete some lines of enter_exit_bot.py
+7091a78 reset
+
+```
+
+指定のファイルの差分だけ表示
+
+```
+$git log -p {filename}
+```
+
+差分の表示件数を-nで指定
+
+```
+git log -n 3
+```
