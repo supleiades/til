@@ -14,13 +14,13 @@ aa6f600 modify observer.sh
 
 ```
 
-指定のファイルの差分だけ表示
+指定のファイルの変更だけ表示
 
 ```
 $git log -p {filename}
 ```
 
-差分の表示件数を-nで指定
+変更の表示件数を-nで指定
 
 ```
 git log -n 3
