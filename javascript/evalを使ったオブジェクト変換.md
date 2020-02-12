@@ -1,4 +1,4 @@
-# JSON形式で文字列を変数に格納
+### JSON形式で文字列を変数に格納
 
 ```
 var name = "SuPleades"
@@ -13,7 +13,7 @@ console.log("( type of str2 )--> " + typeof(str2))
 // ( type of str2 )--> string 
 ```
 
-# 上記で格納した変数（文字列型）をevalを使ってオブジェクト型に変換
+### 上記で格納した変数（文字列型）をevalを使ってオブジェクト型に変換
 
 ```
 var obj1 = eval( '(' + str2 + ')' )
