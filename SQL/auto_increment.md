@@ -37,7 +37,11 @@ SHOW VARIABLES LIKE '%auto_increment%';
 ### 設定変更
 
 ```
+
 ```
+
+
+
 ### 次にauto_incrementで採番される値を確認
 
 ```
@@ -74,4 +78,7 @@ mysql> SELECT auto_increment FROM information_schema.tables WHERE table_name = '
 
 ### 次にauto_incrementで採番される値を変更
 
+```
+mysql> ALTER TABLE TestUser1.incident_TestUser1 AUTO_INCREMENT=1;
+Query OK, 0 rows affected (0.00 sec)
 ```
