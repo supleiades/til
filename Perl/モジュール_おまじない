@@ -1,0 +1,10 @@
+```
+use strict;
+use warnings;
+```
+
+### use warnings
+記述するとより詳細な警告を出力してくれます
+
+### use strict
+厳密にPerlの文法をチェックしてくれる
