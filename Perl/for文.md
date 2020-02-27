@@ -14,6 +14,7 @@ foreach ( ){
 ```
 
 ## 配列の値を取りだしてループ処理
+配列とオブジェクト共に順不同
 #### 基本
 ```
 my @list = qw(red green blue);
@@ -32,5 +33,18 @@ for (@list) {
 
 
 ## ハッシュの値を取りだしてループ処理
-my
+####基本
+```
+my %color = ('red'=>'apple', 'yellow'=>'banana', 'blue'=>'soda');
+foreach my $str (keys(%color)) {
+  print "$str is $color{$str}\n";
+}
+```
 
+#### 省略形（基本系と同様の処理）
+```
+my %color = ('red'=>'apple', 'yellow'=>'banana', 'blue'=>'soda');
+for(keys %color) {
+  print "$_ is $color{$_}\n";
+}
+```
