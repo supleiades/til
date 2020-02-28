@@ -1,0 +1,24 @@
+## 「=~」で左側で読み込んだ値を編集して置換
+```
+open(my $in "<", "filename.txt") or die("Error");
+while (<$in>) {
+  $_ =~ s/abs/ABS/;
+  if ($_ =~ /[a-z]/) {
+    print $_;
+  }
+}
+close($in);
+```
+
+#### 省略系
+「$_ =~」を省略できる
+```
+open(my $in "<", "filename.txt") or die("Error");
+while (<$in>) {
+  s/abs/ABS/;
+  if (/[a-z]/) {
+    print $_;
+  }
+}
+close($in);
+```
