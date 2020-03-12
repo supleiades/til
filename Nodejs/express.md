@@ -1,3 +1,8 @@
+## Directory hierarchy
+```
+
+```
+
 ## basic
 ejsファイルのデフォルトのディレクトリは「views」になる
 ```
