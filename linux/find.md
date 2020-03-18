@@ -8,3 +8,4 @@ find [検索対象フォルダのパス] -type f -print | xargs grep '[検索し
 ```
 for d in `find ./ -maxdepth 1 -type d`; do echo $d `find $d -type f -print | xargs -i ls -l --time-style=long-iso "{}" | sort -k 6,7 | tail -1`;done
 ```
+
