@@ -59,3 +59,21 @@ seq -f "IMG%03g.jpg" 3
 // %f：小数点形式
 ```
 
+# 実行場所を意識せずスクリプトを実行したい場合
+```
+#!/bin/sh
+cd `dirname $0`
+pwd
+```
+
+## dirname
+```
+$ dirname /home/vagrant/sample.sh 
+/home/vagrant
+```
+
+## $0
+```
+$ basename /home/vagrant/sample.sh 
+sample.sh
+```
