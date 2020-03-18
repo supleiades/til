@@ -73,3 +73,13 @@ $ nodenv local 10.19.0
 $ nodenv version
 10.19.0 
 ```
+
+## npmコマンド
+### npmでインストール済みのパッケージ一覧（直下）
+```
+$ npm ls --depth=0
+```
+### npmのパッケージ目録(packeage.json)を作成
+```
+$ npm init
+```
