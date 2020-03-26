@@ -42,6 +42,11 @@ DrRun: パラメータ値の検証、ユーザーまたはロールに関数の�
 ## 同時実行数
 デフォルト:1000
 制限解除後：500~3000(リージョンによりき)
+## Lambda実行のlog
+LambdaはCloudwatchと統合されており、デバックはCloudwatchlogsで行われる
+
+# StepFunctions
+各ステップが自動的にトリガーおよび追跡され、エラーが発生した場合は再試行されるため、アプリが意図した通りの順序で実行される
 
 
 # APIGateway
@@ -155,9 +160,9 @@ All-at-once:
 FormatVersion(optional)
 Description(optional)
 Metadata(optional)
-Parameters(optional)
+Parameters(optional)trueとfalseの評価
 Mappings(optional)
-Conditions(optional)
+Conditions(optional)組み込み関数を使用して条件を定義
 Transform(optional): AWS SAMのバージョンを指定
 Resources(required)
 Outputs(optional)
@@ -295,7 +300,7 @@ aws dynamodb get-item {省略} -- projection-expression "{属性名}"
 ## DataStreams
 ### ストリームデータの暗号化
 HTTPSエンドポイントを使用してクライアント間でデータを暗号化
-KMSによる保存中の暗号化ｗ
+KMSによる保存中の暗号化
 ### スケールの方法
 シャードを追加
 パーティションキーに多様な異なる値が必要になる
@@ -519,9 +524,11 @@ AssumeRole: 一時的なセキュリティ認証情報をリクエストする�
 # AWS Cognito
 ## IDプールとユーザープールの用途
 ### IDプール
+(AWSサービスへのアクセスを提供)
 S3バケットやDynamoDBテーブルなどのAWSリソースへのあくせすをユーザーに許可
 未承認ユーザー用のAWS認証情報を一時的に生成
 ### ユーザープール
+(ユーザープールはパスワードを含むユーザーデータを管理する機能)
 アプリのサインアップとサインインウェブページを設計
 ユーザーデータにアクセスし管理
 ユーザーのデバイス、場所、IPアドレスを追跡し、リクエストレベルのサインイン要求に適応
@@ -556,6 +563,8 @@ GenerateDataKeyWithoutPlaintextは一意のデータキーを生成する
 x-amz-server-side-encrption-customer-algorithm: 暗号化のアルゴリズム指定
 x-amz-server-side-encryption-customer-key: 暗号化または復号するために使用するbase64の256ビットの暗号化キーを指定
 x-amz-server-side-encryption-customer-key-MD5: RFC1321にしたがって暗号化キーのbase64の128ビットのMD5ダイジェストを指定
+## キーを使用したユーザーの監査証跡
+KMSはCloudTrailと統合しているので、KMS内でユーザーやロール、なんのサービスで実行されたか記録されており、S3へのイベント配信も設定可能
 
 
 # STS
