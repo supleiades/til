@@ -64,7 +64,7 @@ $ nodenv install --list | grep -v [a-zA-Z] | grep ^12 | tail -1
 12.16.1
 ```
 ```
-$ node install 12.16.1
+$ nodenv install 12.16.1
 ```
 
 ## プロジェクト（ディレクトリ）ごとに使用するバージョンを変える
@@ -82,4 +82,23 @@ $ npm ls --depth=0
 ### npmのパッケージ目録(packeage.json)を作成
 ```
 $ npm init
+```
+
+## nodenv のインストール時に default-packages file not found と表示される問題
+```
+% nodenv install 10.19.0
+nodenv: /Users/myname/.anyenv/envs/nodenv/versions/10.19.0 already exists
+continue with installation? (y/N) y
+Downloading node-v10.19.0-darwin-x64.tar.gz...
+-> https://nodejs.org/dist/v10.19.0/node-v10.19.0-darwin-x64.tar.gz
+Installing node-v10.19.0-darwin-x64...
+Installed node-v10.19.0-darwin-x64 to /Users/myname/.anyenv/envs/nodenv/versions/10.19.0
+
+nodenv: default-packages file not found
+```
+
+## 解決策
+- default-packages file を作成する
+```
+% touch $(nodenv root)/default-packages
 ```
