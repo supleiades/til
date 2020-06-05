@@ -13,3 +13,6 @@ nRemoved    | 削除された件数
 - Unixエポックミリ秒で保持する方法: `ISODate()`を使う
 
 比較/計算は後者のほうが簡単にできそうだが標準時刻になってしまうのが難点
+
+参考：
+https://qiita.com/drafts/8bcb5b0fc643267d6bcf/edit
