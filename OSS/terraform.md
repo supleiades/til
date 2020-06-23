@@ -7,3 +7,10 @@
   
 ## terraform.tfvars
 - 参考URL: https://learn.hashicorp.com/terraform/getting-started/variables.html
+
+
+## コマンド
+- terraform validate
+- terraform fmt
+- terraform plan
+- terraform apply
