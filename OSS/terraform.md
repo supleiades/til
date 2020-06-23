@@ -10,7 +10,8 @@
 
 
 ## コマンド
-- terraform validate
-- terraform fmt
-- terraform plan
-- terraform apply
+- terraform validate: Terraformの設定ファイルを含む作業ディレクトリを初期化
+- terraform fmt: 
+- terraform plan: リソースやパラメータを変更することなく、パラメータレベルで変更点を確認
+- terraform apply: 設定ファイルに従ってリソースを作成
+- terraform destroy: Terraformが管理するリソースを削除します
