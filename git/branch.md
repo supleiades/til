@@ -7,3 +7,18 @@ git fetch
 ```
 git branch -a
 ```
+
+### ブランチ移動
+```
+git checkout {ブランチ名}
+```
+
+### ブランチ作成と移動
+```
+git branch -b {ブランチ名}
+```
+
+### ブランチ削除
+```
+git branch -d {ブランチ名}
+```
