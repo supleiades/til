@@ -13,9 +13,9 @@ git branch -a
 git checkout {ブランチ名}
 ```
 
-### ブランチ作成と移動
+### ブランチ作成
 ```
-git branch -b {ブランチ名}
+git branch {ブランチ名}
 ```
 
 ### ブランチ削除
