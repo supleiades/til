@@ -2,3 +2,8 @@
 ```
 chmod -R 
 ```
+ディレクトリ を775、ファイルを644などに一髪で変換したい場合
+```
+find {対象パス} -type d -exec chmod 755 {} +
+find {対象パス} -type f -exec chmod 644 {} +
+```
