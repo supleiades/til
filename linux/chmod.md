@@ -9,7 +9,9 @@ find {対象パス} -type f -exec chmod 644 {} +
 ```
 
 よく使うなら、
-```.bashrc
+```
+#.bashrc
+
 function chmod-r(){
   find $1 -type $2 -exec chmod $3 {} +
 }
