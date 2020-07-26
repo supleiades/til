@@ -12,3 +12,8 @@ curl -ks https://`kubectl get svc frontend -o=jsonpath="{.status.loadBalancer.in
 ```
 kubectl get deploy
 ```
+
+## ロールアウト履歴を表示
+```
+kubectl rollout history deployment/
+```
