@@ -32,3 +32,8 @@ kubectl get pods -o jsonpath --template='{range .items[*]}{.metadata.name}{"\t"}
 ```
 kubectl describe pods {特定のpod名}
 ```
+
+## 特定のポッドのログを出力
+```
+kubectl logs {特定のpod名}
+```
