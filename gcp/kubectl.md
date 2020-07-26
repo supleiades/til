@@ -17,3 +17,18 @@ kubectl get deploy
 ```
 kubectl rollout history deployment/
 ```
+
+## ロールアウトの状確認
+```
+kubectl rollout status deployment/hello
+```
+- ポッドで直接確認することもできる
+```
+kubectl get pods -o jsonpath --template='{range .items[*]}{.metadata.name}{"\t"}{"\t"}{.spec.containers[0].image}{"\n"}{end}'
+```
+
+
+## 特定のポッドに関する詳細な情報出力（トラブルシューティングなどで役立つ）
+```
+kubectl describe pods {特定のpod名}
+```
