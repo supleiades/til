@@ -5,5 +5,5 @@
 
 `$ gcloud mb gs://{bucketName}`
 
-## バケットに存在するファイルの詳細情報取得
+## バケットに存在するファイルの「アクセス制御」と「ヘッダー情報」確認
 `$ gsutil ls -L gs://{bucket}/{fileName}`
