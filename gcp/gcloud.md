@@ -7,3 +7,8 @@ gcloud projects list
 ```
 gcloud config set project {プロジェクトID}
 ```
+
+## プロジェクトに参加している全メンバーの権限確認
+```
+gcloud projects get-iam-policy {プロジェクト名}
+```
