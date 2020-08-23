@@ -34,3 +34,12 @@ gcloud projects get-iam-policy {プロジェクト名}
 [--region = REGION    
 | --zone = ZONE、-z ZONE] [GCLOUD_WIDE_FLAG…]
 ```
+
+## gcloud container clusters resize NAME
+```
+ (--num-nodes=NUM_NODES | --size=NUM_NODES) 
+[--async] 
+[--node-pool=NODE_POOL] 
+[--region=REGION  | --zone=ZONE, -z ZONE] 
+[GCLOUD_WIDE_FLAG …]
+```
