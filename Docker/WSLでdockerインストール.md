@@ -32,7 +32,7 @@ sudo apt-get install software-properties-common
 
 
 ## 参考
-- 基本的なインストール：https://qiita.com/tkyonezu/items/0f6da57eb2d823d2611d
-- WSLの躓きポイント　：https://qiita.com/obukoh/items/416c4cb1b88261bf3357
-
+- 基本的なインストール ：https://qiita.com/tkyonezu/items/0f6da57eb2d823d2611d
+- WSLの躓きポイント(1)：https://qiita.com/obukoh/items/416c4cb1b88261bf3357
+- WSLの躓きポイント(2)：https://kazuhira-r.hatenablog.com/entry/20160116/1452933387
 
