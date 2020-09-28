@@ -6,3 +6,5 @@ service start docke
 or
 systemctl start docker
 ```
+
+## 最初はyumやaptでupdateをしよう
