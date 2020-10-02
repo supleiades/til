@@ -6,3 +6,6 @@ date '+%Y%m'
 date -v-1m '+%Y%m%d'
 # 20200903
 ```
+
+### 参考
+https://mazeltov7.hateblo.jp/entry/2016/10/10/140222
