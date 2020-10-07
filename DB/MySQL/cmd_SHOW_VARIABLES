@@ -1,0 +1,65 @@
+### 接続失敗回数で接続拒否されるようになる回数確認
+
+```
+mysql> SHOW VARIABLES LIKE 'max_connect_errors';
++--------------------+-------+
+| Variable_name      | Value |
++--------------------+-------+
+| max_connect_errors | 100   |
++--------------------+-------+
+1 row in set (0.00 sec)
+```
+
+### 全ての設定を確認
+```
+mysql> SHOW VARIABLES;
++-----------------------------------------+---------------------------+
+| Variable_name                           | Value                     |
++-----------------------------------------+---------------------------+
+| auto_increment_increment                | 1                         |
+| auto_increment_offset                   | 1                         |
+| autocommit                              | ON                        |
+| automatic_sp_privileges                 | ON                        |
+| back_log                                | 50                        |
+| basedir                                 | /home/jon/bin/mysql-5.5   |
+| big_tables                              | OFF                       |
+| binlog_cache_size                       | 32768                     |
+| binlog_direct_non_transactional_updates | OFF                       |
+| binlog_format                           | STATEMENT                 |
+| binlog_stmt_cache_size                  | 32768                     |
+| bulk_insert_buffer_size                 | 8388608                   |
+...
+| max_allowed_packet                      | 1048576                   |
+| max_binlog_cache_size                   | 18446744073709547520      |
+| max_binlog_size                         | 1073741824                |
+| max_binlog_stmt_cache_size              | 18446744073709547520      |
+| max_connect_errors                      | 10                        |
+| max_connections                         | 151                       |
+| max_delayed_threads                     | 20                        |
+| max_error_count                         | 64                        |
+| max_heap_table_size                     | 16777216                  |
+| max_insert_delayed_threads              | 20                        |
+| max_join_size                           | 18446744073709551615      |
+...
+
+| thread_handling                         | one-thread-per-connection |
+| thread_stack                            | 262144                    |
+| time_format                             | %H:%i:%s                  |
+| time_zone                               | SYSTEM                    |
+| timed_mutexes                           | OFF                       |
+| timestamp                               | 1316689732                |
+| tmp_table_size                          | 16777216                  |
+| tmpdir                                  | /tmp                      |
+| transaction_alloc_block_size            | 8192                      |
+| transaction_prealloc_size               | 4096                      |
+| tx_isolation                            | REPEATABLE-READ           |
+| unique_checks                           | ON                        |
+| updatable_views_with_limit              | YES                       |
+| version                                 | 5.5.17-log                |
+| version_comment                         | Source distribution       |
+| version_compile_machine                 | x86_64                    |
+| version_compile_os                      | Linux                     |
+| wait_timeout                            | 28800                     |
+| warning_count                           | 0                         |
++-----------------------------------------+---------------------------+
+```
