@@ -1,0 +1,9 @@
+### 「max_connect_errors」が出た時の対処
+
+- 以下のコマンドで接続拒否をリセットする
+```
+mysql> FLUSH HOSTS;
+Query OK, 0 rows affected (0.01 sec)
+```
+
+
