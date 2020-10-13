@@ -15,7 +15,7 @@ Host mo9mo9
 [ssh_connection]
 ssh_args = -F ssh_config
 
-### 
+### hosts
 [production]
 {Hostname of ssh_config}
 ```
