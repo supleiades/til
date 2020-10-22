@@ -43,3 +43,8 @@ gcloud projects get-iam-policy {プロジェクト名}
 [--region=REGION  | --zone=ZONE, -z ZONE] 
 [GCLOUD_WIDE_FLAG …]
 ```
+
+## monitoring policies list
+```
+gcloud alpha monitoring policies list
+```
