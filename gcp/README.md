@@ -1,7 +1,7 @@
 # インストール前提条件
 - Pythonが必須
 
-# インストール
+# gcloudインストール
 ```
 python --version
 
