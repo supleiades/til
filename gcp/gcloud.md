@@ -44,7 +44,7 @@ gcloud projects get-iam-policy {プロジェクト名}
 [GCLOUD_WIDE_FLAG …]
 ```
 
-## monitoring policies list
+## モニタリング アラートポリシー一覧表示
 ```
 gcloud alpha monitoring policies list
 ```
