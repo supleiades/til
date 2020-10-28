@@ -48,3 +48,7 @@ gcloud projects get-iam-policy {プロジェクト名}
 ```
 gcloud alpha monitoring policies list
 ```
+- 既に作成されているポリシーを参考にterrafomr化する場合におすすめな出力形式
+```
+gcloud alpha monitoring policies describe projects/{プロジェクト名}/alertPolicies/{参考にしたいポリシーid} --format json
+```
