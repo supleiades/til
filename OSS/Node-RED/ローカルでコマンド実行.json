@@ -1,0 +1,60 @@
+[
+    {
+        "id": "2a3c600.18e69a",
+        "type": "tab",
+        "label": "サーバー内からコマンドを実行",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ce77e357.2ee77",
+        "type": "debug",
+        "z": "2a3c600.18e69a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 510,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "7e91e93d.194cc8",
+        "type": "inject",
+        "z": "2a3c600.18e69a",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "x": 120,
+        "y": 60,
+        "wires": [
+            [
+                "8798ae6f.76602"
+            ]
+        ]
+    },
+    {
+        "id": "8798ae6f.76602",
+        "type": "func-exec",
+        "z": "2a3c600.18e69a",
+        "name": "",
+        "func": "var exec = child_process.exec('ls -la', (error, stdout, stderr) => { \n    if (error) { \n    console.error(`exec error: ${error}`); \n    return; \n    } \n    console.log(`stdout: ${stdout}`); \n    console.log(`stderr: ${stderr}`); \n    msg.payload = stdout;\n    callback(msg);\n}); ",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 300,
+        "y": 60,
+        "wires": [
+            [
+                "ce77e357.2ee77"
+            ]
+        ]
+    }
+]
