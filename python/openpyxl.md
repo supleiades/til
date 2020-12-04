@@ -8,8 +8,20 @@ https://office54.net/python/excel/python-excel-openpyxl
 ### excelファイルを取得
 ```
 import openpyxl
-book = openpyxl.load_workbook('{ファイル名}')
+wb = openpyxl.load_workbook('{ファイル名}')
 ```
+### シート名一覧取得
+```
+#.sheetnames
+sheetList = wb.sheetnames
+
+# ２番目のシートを取得
+sheet = wb[sheetList[1]]
+
+# シート名を取得
+sheetname = sheet.title
+```
+
 
 ## （例） 
 ```
