@@ -1,5 +1,17 @@
-## エクセルを操作するライブラリ
+# 参考
+https://office54.net/python/excel/python-excel-openpyxl
 
+
+# エクセルを操作するライブラリ
+
+## メソッド
+### excelファイルを取得
+```
+import openpyxl
+book = openpyxl.load_workbook('{ファイル名}')
+```
+
+## （例） 
 ```
 import openpyxl
 
