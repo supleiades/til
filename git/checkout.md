@@ -5,7 +5,7 @@ git checkout -b {ブランチ名}
 
 ### リモートブランチをローカルに持ってくる方法
 ```
-git remote -v
+git remote -a
 # 出力結果に取得したいブランチがある前提
 
 git checkout -b {branch名} {origin/{branch名}}
