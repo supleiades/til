@@ -13,6 +13,7 @@ git diff master origin/master -- rolesmaneger.js
 ```
 ## ..
 - git rev-list foo..barは、ブランチbarにあってブランチfooにないものすべてを表示します。
+
 ## ...
 - 一方で、git rev-list foo...barは、fooとbar両方に存在するコミットすべてを表示します
 ```
