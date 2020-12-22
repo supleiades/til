@@ -11,6 +11,8 @@ git diff master origin/master -- rolesmaneger.js
 
 ## ..や...の違い
 ```
+git diff foo..barはgit diff foo barと同じ
+
 ## ..
 - git rev-list foo..barは、ブランチbarにあってブランチfooにないものすべてを表示します。
 
