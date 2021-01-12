@@ -16,4 +16,7 @@ https://qiita.com/ryuichi1208/items/e4e1b27ff7d54a66dcd9
 
 # discordにWebhooksでテストメッセージを送信するコマンド
 - curl -H "Content-Type: application/json" -X POST -d '{"username": "test", "content": "hello"}' {*webhooksURL*}`
+
+# 参考
+- https://qiita.com/youtoy/items/c77106a23b60b364b9a0
 ```
