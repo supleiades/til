@@ -3,17 +3,15 @@
 - 鍵にコメントを入れる
 `ssh-keygen -f {ファイル名} -t rsa -b 4096 -C "{コメント}"`
 
-- 公開鍵のコメントなどの情報を確認する
-`ssh-keygen -lf {公開鍵のパス}`
-
 # 秘密鍵から公開鍵を作成する
 ```
 ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.pub
 ```
 
 # 鍵の強度を確認する
+- 公開鍵のコメントなどの情報を確認する
 ```
-ssh-keygen -l -f ~/.ssh/id_rsa.pub
+ssh-keygen -lf ~/.ssh/id_rsa.pub
 ```
 
 
