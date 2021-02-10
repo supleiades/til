@@ -1,0 +1,20 @@
+# 鍵の作成
+`ssh-keygen -t rsa -b 4096`
+- 鍵にコメントを入れる
+`ssh-keygen -t rsa -b 4096 -C "{コメント}"`
+- 公開鍵のコメントなどの情報を確認する
+`ssh-keygen -lf {公開鍵のパス}`
+
+# 秘密鍵から公開鍵を作成する
+```
+ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.pub
+```
+
+# 鍵の強度を確認する
+```
+ssh-keygen -l -f ~/.ssh/id_rsa.pub
+```
+
+
+## 参照
+- https://www.atmarkit.co.jp/ait/articles/1908/02/news015.html
