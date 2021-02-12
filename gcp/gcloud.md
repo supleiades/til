@@ -19,6 +19,11 @@ gcloud iam service-accounts keys create {保存するパス}/account.json \
   --iam-account terraform-serviceaccount@{プロジェクト_ID}.iam.gserviceaccount.com
 ```
 
+### サーバーの環境変数にaccount.jsonを読み込ませる
+```
+export GOOGLE_CLOUD_KEYFILE_JSON=account.json
+```
+
 ## プロジェクトに参加している全メンバーの権限確認
 ```
 gcloud projects get-iam-policy {プロジェクト名}
