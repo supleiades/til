@@ -8,6 +8,11 @@ gcloud projects list
 gcloud config set project {プロジェクトID}
 ```
 
+## アカウントに権限を付与
+```
+gcloud projects add-iam-policy-binding {プロジェクト名} --member {serviceAccount:{アカウントのARN}} --role {付与するロール}
+```
+
 ## プロジェクトに参加している全メンバーの権限確認
 ```
 gcloud projects get-iam-policy {プロジェクト名}
