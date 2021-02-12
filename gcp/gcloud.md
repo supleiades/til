@@ -13,6 +13,12 @@ gcloud config set project {プロジェクトID}
 gcloud projects add-iam-policy-binding {プロジェクト名} --member {serviceAccount:{アカウントのARN}} --role {付与するロール}
 ```
 
+### アカウントの認証情報取得(account.json)
+```
+gcloud iam service-accounts keys create {保存するパス}/account.json \
+  --iam-account terraform-serviceaccount@{プロジェクト_ID}.iam.gserviceaccount.com
+```
+
 ## プロジェクトに参加している全メンバーの権限確認
 ```
 gcloud projects get-iam-policy {プロジェクト名}
