@@ -1,3 +1,19 @@
+## cliから自分のアカウントにログイン
+```
+gcloud auth login
+# URLコピペ、ブラウザから認証
+# ログイン後のコードをターミナルにコピペして認証完了
+
+gcloud projects list
+
+gcloud config set project {プロジェクトID}
+```
+
+## 適応されている認証情報の確認
+```
+gcloud config configurations list
+```
+
 ## プロジェクト一覧表示
 ```
 gcloud projects list
