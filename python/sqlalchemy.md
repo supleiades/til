@@ -64,3 +64,15 @@ updaterecord.commit()
 deleterecord = session.query({操作したいテーブルのクラス}).filter({操作したいテーブルのクラス}.{カラム名} == {取得したい値}).delete()
 
 ```
+
+
+
+
+# メモ
+```py
+>>> get_db_session().bind.table_names()
+...
+021-02-23 13:22:39,769 INFO sqlalchemy.engine.base.Engine SHOW FULL TABLES FROM `VCtimeRecord`
+2021-02-23 13:22:39,769 INFO sqlalchemy.engine.base.Engine {}
+['studymembers', 'studytags', 'studytimelogs']
+```
