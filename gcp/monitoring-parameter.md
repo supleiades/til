@@ -1,0 +1,12 @@
+## メモリ使用率
+- agent.googleapis.com/memory/percent_userd
+## CPU使用率
+- compute.googleapis.com/instance.cpu.utilization
+## プロセス監視
+- select_process_count
+## ロードバランサー
+- agent.googleapis.com/cpu/load_15m
+## ディスク使用率
+- agent.googleapis.com/disk/percent_userd
+## インスタンス死活監視もどき
+- compute.googleapis.com/instance/uptime
