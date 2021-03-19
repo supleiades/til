@@ -26,3 +26,7 @@ twine upload --repository testpypi dist/*
 # pip install --index-url https://test.pypi.org/simple/{あなたのパッケージ名}
 pip install -i https://test.pypi.org/simple/ mo9mo9db
 ```
+
+
+## 参考
+- https://qiita.com/shonansurvivors/items/0fbcbfde129f2d26301c
