@@ -30,5 +30,10 @@ pip install -i https://test.pypi.org/simple/ mo9mo9db
 ```
 
 
+# 本番環境のPyPiへのパッケージ登録をする場合
+`twine upload --repository pypi dist/*`
+
+
+
 ## 参考
 - https://qiita.com/shonansurvivors/items/0fbcbfde129f2d26301c
