@@ -3,6 +3,8 @@
 
 # conf
 ## ログをそのままloggingに送る
+- 設定を追加した場合再起動する
+  - すると、posファイルが作られる
 ```
 <source>
   @type tail
