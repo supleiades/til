@@ -66,6 +66,40 @@ deleterecord = session.query({操作したいテーブルのクラス}).filter({
 ```
 
 
+## 
+```py
+from sqlalchemy import func as F
+from sqlalchemy import desc
+from mo9mo9db.dbtables import Studytimelogs  # noqa: E402, F401
+session = Studytimelogs.session()
+obj = session.query(Studytimelogs.member_id, F.sum(Studytimelogs.studytime_min)).filter(Studytimelogs.access == "out", Studytimelogs.studytime_min.isnot(None)).group_by(Studytimelogs.member_id).order_by(desc(F.sum(Studytimelogs.studytime_min))).all()
+
+_ = [print(f"[name:{i[0]}] {i[1]}/min ") for i in obj]
+> [name:603567991132782592] 1633/min 
+> [name:487653156608671744] 779/min 
+> [name:405273369718816768] 659/min 
+> [name:774508401215799336] 311/min 
+> [name:523121850063257600] 86/min 
+> [name:756348505261342751] 84/min 
+> [name:686227586652962870] 82/min 
+> [name:646127851644649474] 75/min 
+> [name:730770162739052602] 72/min 
+> [name:713005094978846731] 66/min 
+> [name:451763787821744137] 63/min 
+> [name:689449857672282158] 62/min 
+> [name:389642122376118273] 45/min 
+> [name:777862430063591424] 38/min 
+> [name:798147954841485333] 33/min 
+> [name:371142888412938252] 28/min 
+> [name:186844273029677056] 18/min 
+> [name:801336569944473610] 18/min 
+> [name:698350641638277180] 15/min 
+> [name:669117688530075648] 9/min 
+> [name:402281699414900737] 5/min 
+> [name:414804663410360331] 5/min 
+> [name:825252908986925056] 0/min
+```
+
 
 
 # メモ
