@@ -1,3 +1,4 @@
+```
 タスク 1: VM を作成する
 詳細オプションを使用して VM を定義する
 GCP Console のナビゲーション メニュー（ナビゲーション メニュー）で、[Compute Engine] > [VM インスタンス] をクリックします。
@@ -270,3 +271,4 @@ startup-script-url	https://storage.googleapis.com/cloud-training/archinfra/mcser
 shutdown-script-url	https://storage.googleapis.com/cloud-training/archinfra/mcserver/shutdown.sh
 [項目を追加] をクリックして shutdown-script-url を追加します。インスタンスを再起動すると、起動スクリプトが自動的に Minecraft ディスクを所定のディレクトリにマウントし、Minecraft サーバーを screen セッションで起動して、セッションを接続解除します。インスタンスを停止すると、シャットダウン スクリプトが Minecraft サーバーをシャットダウンしてから、インスタンスがシャットダウンします。これらのスクリプトは Cloud Storage に保存することをおすすめします。
 [保存] をクリックします。
+```
