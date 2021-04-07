@@ -1,0 +1,3 @@
+```
+gcloud compute ssh {instance_name} --zone {instance_zone} --tunnel-through-iap
+```
