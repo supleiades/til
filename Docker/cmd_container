@@ -1,0 +1,16 @@
+- 基本的な操作
+```sh
+docker container run  -e MYSQL_ROOT_PASSWORD=root -d -p 3306:3306 mysql
+
+docker container ls
+
+# mysql -proot  -uroot  -h127.0.0.1
+
+docker container stop ${Container ID}
+
+docker container ls 
+
+docker container ls -a
+
+docker container rm  ${Container ID}
+```
