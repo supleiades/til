@@ -54,6 +54,7 @@ spec:
 kubectl apply -f nodeport-svc.yaml
 gcloud compute firewall-rules create all-allow --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=all --source-ranges=0.0.0.0/0
 kubectl get node -owide
+curl 34.71.171.147:30080
 
 ```
 
@@ -79,5 +80,5 @@ spec:
 
 kubectl apply -f lb-svc.yaml
 kubectl get service  
-curl${type LBの サービスのIP}:8080
+curl ${type LBの サービスのIP}:8080
 ```
