@@ -1,3 +1,4 @@
+# type: ClusterIP
 - クラスター内からこのIPに通信が飛ぶと、ラベル「nginx」を持ったポッドへTCP80の通信が行われる
 ```
 vim clusterIP-svc.yaml
@@ -26,4 +27,33 @@ kubectl exec -it  nginx-${XXXXX} -- curl  ${ClusterIP}/8080
 
 kubectl delete pod nginx-${XXXXX}
 kubectl get pod
+```
+
+#
+
+```
+vim nodeport-svc.yaml
+
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: nginx
+  name: nginx-nodeport
+spec:
+  type: NodePort
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 80
+    nodePort: 30080
+  selector:
+    app: nginx
+
+
+
+kubectl apply -f nodeport-svc.yaml
+gcloud compute firewall-rules create all-allow --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=all --source-ranges=0.0.0.0/0
+kubectl get node -owide
+
 ```
