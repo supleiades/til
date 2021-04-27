@@ -29,8 +29,7 @@ kubectl delete pod nginx-${XXXXX}
 kubectl get pod
 ```
 
-#
-
+#type: NodePort
 ```
 vim nodeport-svc.yaml
 
@@ -56,4 +55,29 @@ kubectl apply -f nodeport-svc.yaml
 gcloud compute firewall-rules create all-allow --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=all --source-ranges=0.0.0.0/0
 kubectl get node -owide
 
+```
+
+# type: LoadBalancer
+```
+vim lb-svc.yaml
+
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: nginx
+  name: nginx-lb
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 80
+  selector:        
+    app: nginx
+
+
+kubectl apply -f lb-svc.yaml
+kubectl get service  
+curl${type LBの サービスのIP}:8080
 ```
