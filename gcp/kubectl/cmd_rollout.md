@@ -6,3 +6,9 @@ kubectl rollout history deployment/hello
 # 1         <none>
 # 2         <none>
 ```
+
+- 元のバージョンに戻る
+```
+kubectl rollout undo deployment/hello
+# deployment.apps/hello rolled back
+```
