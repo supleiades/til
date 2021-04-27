@@ -20,7 +20,10 @@ spec:
 
 kubectl apply -f clusterIP-svc.yaml
 kubectl get service
+
+# [-it]の後のポッドから[--]の後に指定したコマンドを送信する
 kubectl exec -it  nginx-${XXXXX} -- curl  ${ClusterIP}/8080
+
 kubectl delete pod nginx-${XXXXX}
 kubectl get pod
 ```
