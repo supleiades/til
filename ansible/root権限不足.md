@@ -16,4 +16,7 @@ becomeでroot権限で実行するには、そのホスト上でsudo su -がパ�
 ```
 
 ### 参考
+- ２次情報：技術ブログ
 https://qiita.com/zaki-lknr/items/3ac4c7e105609a7f0bf9#yum%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8root%E6%A8%A9%E9%99%90
+- 公式：becomeについて
+https://docs.ansible.com/ansible/2.9_ja/user_guide/become.html
