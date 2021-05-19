@@ -118,7 +118,7 @@ DoS攻撃
   - デフォルトで様々な許可する設定などが追加されるので使用が推奨できない
 - GREトラフィック: SD-WANの関係、そしてコロナの影響で重要視されるようになった
 #### 命名規則（統一したほうがよい）
-- {firection}-{allow/deny}-service}-{to-from-lacation}
+- {firection}-{allow/deny}-{service}-{to-from-lacation}
 #### 組織のファイアウォール
 #### マネージドSSLプロファイル
 - 互換：win7やガラゲーなどにどうしても対応したい場合など
@@ -135,7 +135,10 @@ DoS攻撃
 ## ServiceControl
 - データの持ち出しを防ぐことも可能
 
-###
+# Flow Logs
+
+### Network Topology
+- ネットワークの関係図が見られる
 
 
 #　余談
