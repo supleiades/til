@@ -34,3 +34,29 @@
 `gcloud config get-value project`
 - 
 `bigquery-qwiklab@$(gcloud config get-value project).iam.gserviceaccount.com`
+
+## ストレージ
+![image](https://user-images.githubusercontent.com/45380191/118919221-13d27480-b96f-11eb-87bc-a85c25e29a36.png)
+- 権限は上位から継承される
+- パーミッション 
+  - IAMロール
+  - ACL（オブジェクト）
+- バケットの監査はデフォルトで有効
+  - バケット・オブジェクトの作成や修正などのログ  
+- アクセスログはデフォルトは無効なので、有効化する必要がある
+  -　オブジェクトを読み込んだログなど詳細な情報を記録
+  -　使用方法
+    - アクセスログ用のバケットが必要
+    - バケットへの書き込み権限が必要
+    - 1日1回作成、1時間ごとにログを保存
+    ![image](https://user-images.githubusercontent.com/45380191/118919392-5eec8780-b96f-11eb-9229-5ff4ecd03905.png)
+  - auditlogでもアクセスログは取得できるが、ここで説明するアクセスログよりものすごく詳細なメタデータを含んだログが記録される
+    - 一般的に解析するレベルだと、ストレージのアクセスログを使用することを推奨
+- ロードジョブを仕様してBigqueryに保存する
+  ![image](https://user-images.githubusercontent.com/45380191/118919493-95c29d80-b96f-11eb-8b76-6617de7fe5a5.png)
+- gsutilコマンドで署名付きURLを作成
+  ![image](https://user-images.githubusercontent.com/45380191/118919614-cefb0d80-b96f-11eb-8c52-73d7fecac618.png)
+  
+
+
+
