@@ -1,0 +1,47 @@
+```
+gcloud iam service-accounts create my-sa-123 --display-name "my service account"
+
+gcloud projects add-iam-policy-binding $DEVSHELL_PROJECT_ID \
+    --member serviceAccount:my-sa-123@$DEVSHELL_PROJECT_ID.iam.gserviceaccount.com --role roles/editor
+
+# GUIからサービスアカウントを作成し、以下を許可する
+## BigQuery User
+## BigQuery Data Viewer
+
+# GUIからインスタンスを作成し、一つ上で作成したサービスアカウントを紐づける
+## 
+
+sudo apt-get update -y
+sudo apt-get install -y git python3-pip
+sudo pip3 install six==1.13.0
+sudo pip3 install --upgrade google-cloud-bigquery
+sudo pip3 install pandas
+
+# 以下、pythonファイル作成
+# ---------------------------------------------------
+echo "
+from google.auth import compute_engine
+from google.cloud import bigquery
+
+credentials = compute_engine.Credentials(
+    service_account_email='YOUR_SERVICE_ACCOUNT')
+
+query = '''
+SELECT
+  year,
+  COUNT(1) as num_babies
+FROM
+  publicdata.samples.natality
+WHERE
+  year > 2000
+GROUP BY
+  year
+'''
+
+client = bigquery.Client()
+print(client.query(query).to_dataframe())
+" > query.py
+# ---------------------------------------------------
+
+sudo pip3 install pyarrow==2.0.0
+python3 query.py
