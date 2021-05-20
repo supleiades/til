@@ -1,0 +1,4 @@
+- cloud storageからcsvを読み込む
+```
+bq load --autodetect $DEVSHELL_PROJ:source_data.events gs://cloud-training/gcpsec/labs/bq-authviews-source.csv
+```
