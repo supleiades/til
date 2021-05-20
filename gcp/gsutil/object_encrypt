@@ -1,0 +1,20 @@
+# オブジュエクトの権限を自分の鍵から暗号化
+```
+# .boto の作成
+gsutil config -n
+
+openssl rand 32 > mykey.txt
+openssl base64 -in mykey.txt
+## 出力されたものをコピー
+
+vi .boto
+## encryption_key
+### 暗号鍵
+## decryption_key1
+### 古い暗号鍵
+
+# 古い鍵で暗号化されたオブジェクトを新しい暗号鍵で暗号し直して保存
+gsutil rewrite -k gs://$BUCKET_NAME/setup.html
+
+```
+
