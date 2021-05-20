@@ -28,3 +28,9 @@
       - キーの有効期限
     - 最近CMEKを使って暗号化するのを推奨されている
       - KEKの「最低５年に１度は長いな...」と思われる
+
+## gcloud
+- プロジェクトIDを取得
+`gcloud config get-value project`
+- 
+`bigquery-qwiklab@$(gcloud config get-value project).iam.gserviceaccount.com`
