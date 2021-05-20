@@ -1,0 +1,11 @@
+# gcloudコマンドからssh鍵を自動生成してもらう方法
+- gcloud経由でSSHすることで、サーバー上に公開鍵が配置される
+  - 秘密鍵はローカルの.sshに自動保存される
+```
+gcloud compute ssh {instance_name}  --project {project_id} --zone {zone_name}
+```
+
+### 参考
+https://www.nttpc.co.jp/technology/sdwan.html
+
+
