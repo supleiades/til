@@ -10,3 +10,12 @@ dpkg -l google-fluentd
 # sudo apt-get update
 # sudo apt-get install google-fluentd
 ```
+
+
+## windows serverにLoggingエージェントをインストール
+```
+powershell
+
+invoke-webrequest https://dl.google.com/cloudagents/windows/StackdriverLogging-v1-11.exe -OutFile StackdriverLogging-v1-11.exe;
+.\StackdriverLogging-v1-11.exe
+```
