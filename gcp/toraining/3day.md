@@ -68,7 +68,18 @@
   - インストール
     - https://cloud.google.com/stackdriver/docs/solutions/ops-agent/installation?hl=ja
 
- 
+## ログ
+### アクセスログ
+- 普通はデフォルトでオフだが、Bigqueryのみデフォルトでオン
+### 監査ログ
+- デフォルト
+  - 保存期間400日
+### logs routing sink
+- 他のプロジェクトに転送して保存できる
+- 権限が必要
+  - シンク作成時にIdentityが自動で作成される
+  - パーミションON
+  - sharedataset で「テーブル作成/ログの書き込み」を許可するとよい
 
 
 
