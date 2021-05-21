@@ -18,4 +18,6 @@ powershell
 
 invoke-webrequest https://dl.google.com/cloudagents/windows/StackdriverLogging-v1-11.exe -OutFile StackdriverLogging-v1-11.exe;
 .\StackdriverLogging-v1-11.exe
+
+# PC再起動
 ```
