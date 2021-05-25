@@ -14,6 +14,12 @@ ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.pub
 ssh-keygen -lf ~/.ssh/id_rsa.pub
 ```
 
+# 作成済みの鍵にパスフレーズを付与する
+- -m: OpenSSH形式の鍵になってしまうので、それを従来のrsa形式で作成することを指定する
+```sh
+ssh-keygen -p -N {Passphrase} -m PEM -f {KeyfilePath}
+```
+
 
 ## 参照
 - https://www.atmarkit.co.jp/ait/articles/1908/02/news015.html
