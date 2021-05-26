@@ -71,16 +71,38 @@ cluster( master -> node(pod(node(conteiner, conteiner, ... ))))
 - labelsを使用することでcliから特定のものを操作できる
 
 ### podとコントローラーオブジェクト
-#### ReplicaSet
-#### Deployment
-- 常に実行を望んでいるものを動かす対象が推奨
-#### StatefulSet
-#### DemonSet
-#### Job
+- ReplicaSet
+- Deployment
+  - 常に実行を望んでいるものを動かす対象が推奨
+- StatefulSet
+- DemonSet
+- Job
 
 ### ネームスペース
--   
+-  
 
-- podにIPアドレスが付与されるk
+### kubectl（きゅーぶこんとろーる）
+- ただし、クラスターを作るのはgcloudコマンド
+- 作成されたクラスターを操作するのはkubectl
+- kubectlについてはkubenetesとGKE違ったプラットフォームであっても同じ処理になる
+- 構成ファイル
+  - $HOME/.kube/config
+- クラスターに接続
+```
+gcloud container clusters get-credentials standard-cluster-1 --zone us-central1-a --project {projectn_name}
+```
+- kubectlの構文
+```
+kubectl [コマンド:実行する処理] [タイプ] [名前] [フラグ]
+```
+- 主なコマンド
+  - get
+  - describe
+  - exec 
+  - logs
+  - オブジェクトを作成、表示、削除、エクスポートなど色々なことができる
+
+
+- podにIPアドレスが付与される
 - podにIPアドレスが付与される
 - podにIPアドレスが付与される
