@@ -4,6 +4,7 @@
 ```sh
 gcloud mb -b on {}
 ```
+- 参考: https://cloud.google.com/storage/docs/gsutil/commands/mb
 
 ### オブジェクトの権限を確認する
 ```sh
