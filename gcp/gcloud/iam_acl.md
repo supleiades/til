@@ -31,4 +31,7 @@ gcloud auth activate-service-account --key-file credentials.json
 ```
 gcloud auth revork
 ```
+- 参考: https://cloud.google.com/sdk/gcloud/reference/auth/revoke
+
+
 
