@@ -35,3 +35,8 @@ kubectl rollout undo deployments {deployment_name}
 ```sh
 kubectl rollout history deployment/{deployment_name} --revision=3
 ```
+
+## yamlファイルで出力
+```sh
+kubectl get deployment [DEPLOYMENT 名] -o yaml > this.yaml
+```
