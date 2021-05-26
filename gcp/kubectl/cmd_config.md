@@ -17,3 +17,8 @@ kubectl config get-contexts
 ```
 kubectl config use-context {変更したいコンテキスト}
 ```
+
+- アクティブ コンテキストのクラスタ情報を出力
+```sh
+kubectl cluster-info
+```
