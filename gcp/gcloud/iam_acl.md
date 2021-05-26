@@ -1,6 +1,9 @@
 # バケットとSCLについて
 - バケットのaclを操作するには、GUIでバケット作成時に「きめ細やかな権限設定」をする必要がある
-- CLIからバケットを作成する時は、これがデフォルトで設定される？？（わからん
+- CLIからバケットを作成する時は、デフォルトで有効化になっているが今後デフォルトセットが変更される可能性もあるので、以下のように明示しておくとよい
+```sh
+gcloud mb -b on {}
+```
 
 ### オブジェクトの権限を確認する
 ```sh
@@ -24,5 +27,8 @@ gcloud config list
 ```sh
 gcloud auth activate-service-account --key-file credentials.json
 ```
+- 上で適応したcredentialsを解除する場合
+```
+gcloud auth revork
+```
 
-###
