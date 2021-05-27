@@ -10,3 +10,8 @@
 - ポッドに一連のラベルを追加
 ## --restart
 - ポッドの再起動ポリシーを定義
+
+## 例
+```sh
+kubectl run test-1 --labels app=foo --image=alpine --restart=Never --rm --stdin --tty
+```
