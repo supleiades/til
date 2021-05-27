@@ -92,4 +92,12 @@ ingress=L7ロードバランサー
 ### emptyDir
 -  Pod 用の一時的なディスク領域として利用可能であり、Pod が terminate されると削除
 
+### インフラとアプリを切り分けて、環境依存しないyamlに
+#### persistentVolume
+- 永続ディスクのボリューム
+#### PersistentVolumeClaim
+- persistentVolumeとPodを紐づける設定
+- yamlで記述したボリュームの条件とマッチ（要求するボリューム値以上）すれば自動でアタッチされる
+- マッチしなければ自動で必要な値で作成される
+
 ---------
