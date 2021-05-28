@@ -41,4 +41,14 @@
 ### debug
 - GCEで動くコードのデバックも可能なのか？
   - https://cloud.google.com/debugger/docs/setup?hl=ja
-### 
+
+
+# Storage
+### KubernetesでGoogleサービスを利用する
+- 認証情報が必要になる 
+  - workloadIdentity
+  - serviceAccount
+
+
+
+
