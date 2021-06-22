@@ -1,4 +1,5 @@
 # logrotateとは
+- PATH： /etc/logrotate.d/
 - ログを決められた期間でまとめて別ファイルに置き換えて保存してくれる
 - 一定期間経ったローテーションしたファイルを削除してくれる
 - その際、ローテーションしたファイルは設定によって圧縮できたりもする
@@ -14,13 +15,20 @@
   - デフォルト設定をlogrotate.dに配置したファイルで上書きしたものが実行される
   - logrotate.dを以下のようにすると、デフォルト（/etc/logrotate.conf）の設定が適応される
 ```
-/etc/logrotate.d/test {
+# cat /etc/logrotate.d/test 
+/var/log/test.log {
 }
 ```
+- 参考サイト：https://qiita.com/Esfahan/items/a8058f1eb593170855a1
 
+## 設定ファイルの正常性確認
+``` 
+## -d: --debug
+logrotate -dv /etc/logrotate.d/test
+# 設定したファイルが読み込まれている出力結果が存在すること
 
-参考サイト：
-https://qiita.com/Esfahan/items/a8058f1eb593170855a1
+echo $? 
+# logrotateコマンドの戻り値が「0」であること
+```
 
-PATH： /etc/logrotate.d/
 
