@@ -21,6 +21,16 @@
 ```
 - 参考サイト：https://qiita.com/Esfahan/items/a8058f1eb593170855a1
 
+## /etc/logrotate.d/
+- logrotateが読み込むファイルには要件がある
+  1. ファイル権限が「444」か「644」であること
+  2. ファイル所有者が「root」であること
+- コマンドで変更する場合
+```sh
+sudo chmod 644 {filepath}
+sudo chown root:root {filepath}
+```
+
 ## 設定ファイルの正常性確認
 ```sh
 ## -d: --debug
