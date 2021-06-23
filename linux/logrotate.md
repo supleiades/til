@@ -22,7 +22,7 @@
 - 参考サイト：https://qiita.com/Esfahan/items/a8058f1eb593170855a1
 
 ## 設定ファイルの正常性確認
-``` 
+```sh
 ## -d: --debug
 logrotate -dv /etc/logrotate.d/test
 # 設定したファイルが読み込まれている出力結果が存在すること
@@ -31,4 +31,11 @@ echo $?
 # logrotateコマンドの戻り値が「0」であること
 ```
 
+# 設定ファイルの正常性確認v2
+```sh
+# コマンドの戻り値で正常か判断
+logrotate -dv /etc/logrotate.conf && [ $? -eq 0 ] && echo "ok"
 
+# デバッグの出力結果から設定したファイルが読み込まれているか確認
+logrotate -dv /etc/logrotate.conf 2>&1 | grep {任意のログファイルのパス: /etc/logrotate.d/test}
+```
