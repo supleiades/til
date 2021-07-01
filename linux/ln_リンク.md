@@ -26,3 +26,7 @@ python3: can't open file '{file name}': [Errno 40] Too many levels of symbolic l
 # 解決策：リンク元のパスを絶対パスで指定する
 ```
 
+## シンボリックリンク削除
+```sh
+unlink {path}
+```
