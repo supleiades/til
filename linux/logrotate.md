@@ -49,3 +49,18 @@ logrotate -dv /etc/logrotate.conf && [ $? -eq 0 ] && echo "ok"
 # デバッグの出力結果から設定したファイルが読み込まれているか確認
 logrotate -dv /etc/logrotate.conf 2>&1 | grep {任意のログファイルのパス: /etc/logrotate.d/test}
 ```
+
+# 活用しやすそうなオプション
+## 日付のフォーマットを変更
+- デフォルト：{filename.log}-20210701
+```sh
+filepath {
+  deteformat _%Y%m%d
+}
+```
+## 作成されるファイルの権限
+```sh
+filepath {
+  create 755 user user
+}
+```
