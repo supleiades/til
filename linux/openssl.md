@@ -22,7 +22,7 @@ openssl x509 -noout -text -in {csr file} | md5sum
 ## 整合性確認
 ### 申請書（cs）と秘密鍵（key）
 ```sh
-openssl x509 -noout -modulus -in {csr file} | md5sum
+openssl req -noout -modulus -in {csr file} | md5sum
 openssl rsa -noout -modulus -in {key file} | md5sum
 ```
 
