@@ -25,3 +25,17 @@ gcloud compute instances create my-private-instance \
 # SSH接続
 gcloud compute ssh my-private-instance
 ```
+
+
+# ローカルから接続する
+```sh
+gcloud auth login
+
+gcloud compute instances list
+
+gcloud compute ssh {user_name}@{instance_name} --zone {instance_zone}
+
+# ssh鍵が作成される
+## ローカルユーザーの.ssh/google_compute_engineに秘密鍵と公開鍵が作成される
+## 接続対象のインスタンスに公開鍵が配置される　
+```
