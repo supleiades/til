@@ -37,3 +37,6 @@ docker images
 |WORKDIR|作業ディレクトリ |
 |ONBUILD|ビルド完了時に実行される命令|
 |STOPSIGNAL|コンテナ終了時に送信するシグナル|
+
+## link
+- https://docs.docker.jp/engine/reference/builder.html#id2
