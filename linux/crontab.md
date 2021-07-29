@@ -28,3 +28,6 @@ cp /var/log/messages var/log/messages-`date "+\%Y\%m\%d"`
 
 # 参考： https://qiita.com/Kobecow/items/15f07dfe075083ff326d
 ```
+
+# ログ
+- /var/log/cron
