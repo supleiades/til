@@ -25,4 +25,15 @@ for i, str in enumerate(l, 10):
 # 13 eeeee
 ```
 
+## 0埋め
+```py
+l = ["aaa", "ii", "u", "eeeee"]
+
+for i, str in enumerate(l, 1):
+    print(f"{i:03}_{str}")
+# 001_aaa
+# 002_ii
+# 003_u
+# 004_eeeee
+```
 
