@@ -25,3 +25,9 @@ yum module list php
 
 Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled
 ```
+
+# listとgrep、awkを活用した方法
+- (ex)zabbixのgrep結果の名前の部分だけ空白区切りで出力する方法
+```sh
+yum list installed | grep zabbix | awk '{print $1}' | tr '\n' ' '
+```
