@@ -8,3 +8,12 @@ git log --oneline --name-status
 ```
 git log --no-merges master..iceE-1591-chenge/pin --oneline
 ```
+
+
+## いい感じのコード
+```sh
+git log --graph --pretty=format:'%x09%C(auto) %h %Cgreen %ar %Creset%x09by"%C(cyan ul)%an%Creset" %x09%C(auto)%s %d'
+
+## link
+## https://qiita.com/kawasaki_dev/items/41afaafe477b877b5b73
+```
