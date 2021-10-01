@@ -1,6 +1,9 @@
-# 手順
-- https://qiita.com/7110/items/efe0be1be11bed1db143
+# homebrewインストール手順
+- https://brew.sh/index_ja
 
+
+## nodeenvインストール手順
+- https://qiita.com/7110/items/efe0be1be11bed1db143
 
 # homebrewのコマンド
 ```
