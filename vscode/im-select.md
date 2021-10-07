@@ -59,3 +59,8 @@ im-select
 
 
 ```
+
+## 入力ソースの参考画像
+![image](https://user-images.githubusercontent.com/45380191/136352669-6d4ec186-6cdc-4ca0-86fb-a5995f86b64e.png)
+- [日本語]のひらがな/英字にチェックが入っていればOK
+- これら二つが今回想定しているKotorinの入力ソース
