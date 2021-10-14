@@ -1,5 +1,7 @@
 # 鍵の作成
 `ssh-keygen -t rsa -b 4096`
+- ファイル名
+`ssh-keygen -t rsa -b 4096 -f {ファイル名}`
 - 鍵にコメントを入れる
 `ssh-keygen -f {ファイル名} -t rsa -b 4096 -C "{コメント}"`
 
