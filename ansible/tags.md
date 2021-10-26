@@ -1,3 +1,8 @@
+## 複数タグのtaskを実行
+```
+ansible-playbook -i [インベントリファイル] main.yml -t dev,reboot
+```
+
 ## タグが付与されたtaskのみ実行する場合
 ```
 ansible-playbook main.yml --tags "{tag_name}"
