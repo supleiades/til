@@ -8,6 +8,20 @@ ansible-playbook main.yml --tags "{tag_name}"
 ansible-playbook main.yml --skip-tags "{tag_name}"
 ```
 
+## 特殊なtag
+### always
+- 常に実行する
+```yml
+  tags:
+  - always
+```
+## never
+- 常に実行しない
+```yml
+  tags:
+  - never
+```
+
 # tagsの付与例
 - roles
 ```yml
@@ -21,3 +35,4 @@ ansible-playbook main.yml --skip-tags "{tag_name}"
 ```yml
 - include: dev.yml tags=dev
 ```
+
