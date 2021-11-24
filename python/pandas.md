@@ -32,3 +32,6 @@ pd.json_normalize(l_nested)
 # 0  Alice  25.0     2     8
 # 1    Bob   NaN    10     4
 ```
+
+## リンク
+[表示できる行や列の数を変更する方法](https://qiita.com/daifuku_mochi2/items/30258e58750ff8e85d37)
