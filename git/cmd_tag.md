@@ -10,5 +10,5 @@
 
 
 ## リンク
-[ 基本的なtagの使い方 ](https://qiita.com/growsic/items/ed67e03fda5ab7ef9d08)
-[ tagをリモートに反映させる方法 ](https://qiita.com/aki_55p/items/530754ac6e861122f29b)
+- [ 基本的なtagの使い方 ](https://qiita.com/growsic/items/ed67e03fda5ab7ef9d08)
+- [ tagをリモートに反映させる方法 ](https://qiita.com/aki_55p/items/530754ac6e861122f29b)
