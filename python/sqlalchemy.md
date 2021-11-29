@@ -100,6 +100,14 @@ _ = [print(f"[name:{i[0]}] {i[1]}/min ") for i in obj]
 > [name:825252908986925056] 0/min
 ```
 
+## テーブルの作成・削除
+```py
+# Selfintroduction: sqlalchemyの書式に従い、任意で指定したテーブルのオブジェクト
+# engine: sqlalchemy.create_engineから作成されるオブジェクト
+
+Selfintroduction.__table__.drop(engine)
+Selfintroduction.__table__.create(engine)
+```
 
 
 # メモ
