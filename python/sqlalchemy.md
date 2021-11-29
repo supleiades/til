@@ -109,6 +109,15 @@ Selfintroduction.__table__.drop(engine)
 Selfintroduction.__table__.create(engine)
 ```
 
+## テーブル作成時に指定できる情報
+```py
+class Selfintroduction(DBBaseMixin, Base):
+    __table_args__ = ({"mysql_charset": "utf8mb4",
+                       "mysql_row_format": "DYNAMIC",
+                       "mysql_collate": "utf8mb4_bin"})
+    id = Column(Integer, autoincrement=True)
+    ...
+```
 
 # メモ
 ```py
