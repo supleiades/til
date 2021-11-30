@@ -119,6 +119,19 @@ class Selfintroduction(DBBaseMixin, Base):
     ...
 ```
 
+## テーブル一括削除・作成
+```py
+from sqlalchemy.ext.declarative import declarative_base
+
+from mo9mo9db.dbsession import get_db_engine
+
+Base = declarative_base()
+engine = get_db_engine()
+
+Base.metadata.drop_all(bind=engine)
+Base.metadata.create_all(bind=engine)
+```
+
 # メモ
 ```py
 >>> get_db_session().bind.table_names()
