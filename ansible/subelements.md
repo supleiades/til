@@ -48,3 +48,4 @@ for l in lists["sum_l"]:
 ## 参考
 [多重ループの方法3選](https://hutene.com/ansible_loop/)
 [subelements+loopからの要素取り出し方](https://dev.classmethod.jp/articles/looping_over_subelements/)
+[サブ要素をループさせる](https://dev.classmethod.jp/articles/looping_over_subelements/)
