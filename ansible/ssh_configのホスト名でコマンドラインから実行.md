@@ -1,7 +1,7 @@
 既存ssh_configの情報を使用してhostsを作成・使用せずに対象にコマンドライン(ansibleコマンド)からsshやその他モジュールを使用する
 
 ## 前提
-- ssh_configに記載したホスト名で対象にsshできること
+- ssh_configに記載したホスト名で対象にsshコマンドで接続できること
 ```sh
 ssh {ホスト名}
 ```
@@ -27,7 +27,7 @@ ansible -i {ホスト名}, all -m ping --connection=local
 
 ### その他、興味本位なテスト
 ```sh
-## 成功
+## 成功:
 ansible -i {ホスト名}, all -m ping --connection=local 
 # {ホスト名} | SUCCESS => {
 #     "ansible_facts": {
@@ -39,7 +39,7 @@ ansible -i {ホスト名}, all -m ping --connection=local
 
 
 ## -以下失敗-----------------------------------------------------
-## --connection=localなし
+## 失敗: --connection=localなし
 ansible -i {ホスト名}, all -m ping                   
 # {ホスト名} | UNREACHABLE! => {
 #     "changed": false,
@@ -47,7 +47,8 @@ ansible -i {ホスト名}, all -m ping
 #     "unreachable": true
 # }
 
-# allなし
+
+## 失敗: allなし
 ansible -i {ホスト名}, -m ping --connection=local 
 # usage: ansible [-h] [--version] [-v] [-b] [--become-method BECOME_METHOD] [--become-user BECOME_USER] [-K] [-i INVENTORY] [--list-hosts] [-l SUBSET]
 #                [-P POLL_INTERVAL] [-B SECONDS] [-o] [-t TREE] [-k] [--private-key PRIVATE_KEY_FILE] [-u REMOTE_USER] [-c CONNECTION] [-T TIMEOUT]
@@ -57,12 +58,11 @@ ansible -i {ホスト名}, -m ping --connection=local
 #                [--task-timeout TASK_TIMEOUT] [-a MODULE_ARGS] [-m MODULE_NAME]
 #                pattern
 # ansible: error: the following arguments are required: pattern
+# ...
 
 
-# ,(カンマ)なし
+## 失敗: ,(カンマ)なし
 ansible -i {ホスト名} all -m ping --connection=local
 # [WARNING]: No inventory was parsed, only implicit localhost is available
 # [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
-
-
 ```
