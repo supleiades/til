@@ -25,6 +25,13 @@ ssh_args = -F ssh_config
 ansible -i {ホスト名}, all -m ping --connection=local
 ```
 
+### allじゃなくてungroupでも実行できる
+- [まずはこっちの実験内容を確認してね](https://github.com/supleiades/til/blob/master/ansible/hosts%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF%E7%A2%BA%E8%AA%8D.md#%E5%AE%9F%E9%A8%93)
+- デフォルトでallとグループに所属していないungroupという2つのグループが存在する
+```sh
+ansible -i {ホスト名}, ungrouped -m ping --connection=local
+```
+
 ### その他、興味本位なテスト
 ```sh
 ## 成功:
