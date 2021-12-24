@@ -27,12 +27,23 @@
 
 <img src=https://user-images.githubusercontent.com/45380191/147322489-2bb98a37-0e4b-45a2-83bd-a1f711ea6a26.png width=500>
 
+## Virtual Interface (VIF)
+- AWS側の接続先のことを、Direct ConnectではVirtual Interfaceと呼ぶ
+- VLANのIDを持つインターフェースの事です。 このVIFによってユーザ環境とAWS環境（VPC）を接続（BGPピアを確立）している
+
+### ３種のVIF
+| 名称 | 説明 |
+| :- | :- |
+| プライベートVIF | VPCにプライベートIPを使って接続（DXを利用するタイプがAWS推奨） 最大10個のVPCと接続が可能。これにより、BGPピアリングのセッション数が減ります。 |
+| パブリックVIF | パブリックIPを使って接続。リージョン（中国を除く）を超えた接続が可能で、VPC外のAWSサービス（S3等）にオンプレから直接接続できる。（update: PrivateLinkからS3に接続可能） |
+| トランジットVIF | Trangit Gateway用のDirect Connect Gatewayに接続 TrangitGatewayに接続されたVPCを相互に接続が可能 利用できない条件があるので確認が必要|
+
 
 ## 用語
 
 | 名前 | 略称 | 説明 |
 | :- | :- | :- |
-| BGPピアリング | - | インターネットに接続する際、オンプレミスのルーターとAWSのルータはBGP(Border Gateway Protocol)により接続し、ルート情報の交換を動的に行います。 |
+| BGPピアリング | - | インターネットに接続する際、オンプレミスのルーターとAWSのルータはBGP(Border Gateway Protocol)により接続し、ルート情報の交換を動的に行います。<br>AWSとユーザの経路情報を動的ルーティングで伝えあってくれるので、通信が出来る |
 | Border Gateway Protocol | BGP | ISPが形成する、固有のAS（Autonomous System (自律システム)）が、相互接続時にお互いの経路情報をやり取りするために使われる経路制御プロトコル | 
 | Internet Service Provider | ISP | インターネット接続サービスを提供している事業者。上記物理接続の解説部分では、「キャリアと接続」と記載しましたが、このキャリアにあたるのがISPです。 |
 | Autonomous System | AS | 自律システム。同じルーティング・ポリシーのもとで動作するルータの集合体のこと。ISPが固有で形成しており、世界中に存在する。| 
