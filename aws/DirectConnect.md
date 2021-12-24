@@ -19,3 +19,7 @@
 
 <img src=https://user-images.githubusercontent.com/45380191/147321760-35e5879d-2b60-4347-a3f6-b509e242a76c.png width=500>
 
+### ホスト型接続(sub-1G)
+- APNより仮想的なConnectionが提供され、帯域保証されたVIFを1つだけ作成可能
+
+<img src=https://user-images.githubusercontent.com/45380191/147322489-2bb98a37-0e4b-45a2-83bd-a1f711ea6a26.png width=500>
