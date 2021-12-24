@@ -1,5 +1,8 @@
 # Direct Connect
 
+## DirectConnectに接続するには
+- AWSがDXのデリバリーを認めた、AWSパートナーと契約するか、ユーザ所有のルータをDirectConnectロケーションに設置する必要がある
+
 ## 3つの接続方法
 - ホスト型DirectConnect接続ごとに作成できるVIFは1つだけ
 - [参考](https://aws.amazon.com/jp/premiumsupport/knowledge-center/direct-connect-types/)
@@ -23,3 +26,13 @@
 - APNより仮想的なConnectionが提供され、帯域保証されたVIFを1つだけ作成可能
 
 <img src=https://user-images.githubusercontent.com/45380191/147322489-2bb98a37-0e4b-45a2-83bd-a1f711ea6a26.png width=500>
+
+
+## 用語
+
+| 名前 | 略称 | 説明 |
+| :- | :- | :- |
+| BGPピアリング | - | インターネットに接続する際、オンプレミスのルーターとAWSのルータはBGP(Border Gateway Protocol)により接続し、ルート情報の交換を動的に行います。 |
+| Border Gateway Protocol | BGP | ISPが形成する、固有のAS（Autonomous System (自律システム)）が、相互接続時にお互いの経路情報をやり取りするために使われる経路制御プロトコル | 
+| Internet Service Provider | ISP | インターネット接続サービスを提供している事業者。上記物理接続の解説部分では、「キャリアと接続」と記載しましたが、このキャリアにあたるのがISPです。 |
+| Autonomous System | AS | 自律システム。同じルーティング・ポリシーのもとで動作するルータの集合体のこと。ISPが固有で形成しており、世界中に存在する。| 
