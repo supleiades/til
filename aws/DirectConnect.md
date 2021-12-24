@@ -38,6 +38,10 @@
 | パブリックVIF | パブリックIPを使って接続。リージョン（中国を除く）を超えた接続が可能で、VPC外のAWSサービス（S3等）にオンプレから直接接続できる。（update: PrivateLinkからS3に接続可能） |
 | トランジットVIF | Trangit Gateway用のDirect Connect Gatewayに接続 TrangitGatewayに接続されたVPCを相互に接続が可能 利用できない条件があるので確認が必要|
 
+## 接続の仕方
+### DX契約アカウントからVGWを複数作成して複数VPCに分ける
+[1つの接続を複数VPCに分ける方法](https://qiita.com/KurokawaKouhei/items/d87e608fe43794bc5738)
+
 
 ## 用語
 
