@@ -42,6 +42,8 @@
 ### DX契約アカウントからVGWを複数作成して複数VPCに分ける
 [1つの接続を複数VPCに分ける方法](https://qiita.com/KurokawaKouhei/items/d87e608fe43794bc5738)
 
+## クォータ
+- [AWS Direct Connect のクォータ](https://docs.aws.amazon.com/ja_jp/directconnect/latest/UserGuide/limits.html)
 
 ## 用語
 
