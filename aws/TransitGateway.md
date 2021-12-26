@@ -18,8 +18,6 @@
 
 
 
-
-
 ## TransitGatewayを他のアカウントに共有
 1. 共有元アカウントで「共有」を作成
 1. 共有先アカウントで「共有」を承認
@@ -28,6 +26,10 @@
 ## TransitGatewayのASN
 <img src=https://user-images.githubusercontent.com/45380191/147325673-4c3cd0d1-3df0-425c-83ac-d182bb3e32f4.png width=500>
 
+## TransitGatewayとDirectConnect
+| DirectConnectのタイプ | 接続方法の参考リンク |
+| :- | :- |
+| 共有型DirectConnect　| [“共有型”AWS DirectConnectでも使えるAWS Transit Gateway](https://aws.amazon.com/jp/blogs/news/aws-transit-gateway-with-shared-directconnect/) |
 
 ## 用語
 | 用語 | 説明 |
