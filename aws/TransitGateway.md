@@ -1,5 +1,7 @@
 # Transit Gateway
-
+1. 既にDirect Connect(あるいはDirect Connect Gateway)を利用している場合でもTransit Virtual Interfaceの作成が必要
+1. 旧AZではTransit Gatewayが使えない、旧AZにあるEC2等のリソースとも通信できない
+1. 通信先のVPCリソースが存在する全てのAZのサブネットとTransit Gateway Attachmentを紐づけること
 
 ## TransitGatewayの作成
 ### パラメータ
