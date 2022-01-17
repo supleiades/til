@@ -36,10 +36,9 @@ Inspector リスクスコア: 新しい Amazon Inspector は、最新の CVE 情
   - com.amazonaws.[region].s3
 - 対象のEC2インスタンスにSSMエージェントを導入する
   - デフォルトでプリインストールされているOSについて
-    - パラメータストアより  
-    Amazon Linux OSの最新AMI： 　
-    https://ap-northeast-1.console.aws.amazon.com/systems-manager/parameters/?region=ap-northeast-1&tab=PublicTable#public_parameter_service=ami-amazon-linux-latest  
-    Windows　OSの最新AMI： 　
-    https://ap-northeast-1.console.aws.amazon.com/systems-manager/parameters/?region=ap-northeast-1&tab=PublicTable#public_parameter_service=ami-windows-latest
+    - パラメータストア > パブリックパラメータ  
+      - [Amazon Linux OSの最新AMI](https://ap-northeast-1.console.aws.amazon.com/systems-manager/parameters/?region=ap-northeast-1&tab=PublicTable#public_parameter_service=ami-amazon-linux-latest)
+      - [Windows OSの最新AMI](https://ap-northeast-1.console.aws.amazon.com/systems-manager/parameters/?region=ap-northeast-1&tab=PublicTable#public_parameter_service=ami-windows-latest)
+    - [SSMAgentは、特定のAmazonMachineImages(AMIs)で作成されたインスタンスにプレインストールされています](https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/prereqs-ssm-agent.html)
 
 .
