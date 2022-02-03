@@ -1,3 +1,5 @@
+コマンドプロンプト
+
 ## シリアルナンバー調べ方
 `wmic bios get serialnumber`
 
