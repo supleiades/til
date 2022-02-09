@@ -20,14 +20,22 @@ ansible-playbook main.yml --skip-tags "{tag_name}"
   tags:
   - always
 ```
-## never
+### never
 - 常に実行しない
 ```yml
   tags:
   - never
 ```
 
-# tagsの付与例
+## ansible lintチェックをタスク単位で拒否
+```yml
+- name: command
+  command: {...comannd content...}
+  tags:
+    skip_ansible_lint
+```
+
+## tagsの付与例
 - roles
 ```yml
 - hosts: dev
